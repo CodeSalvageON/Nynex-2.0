@@ -1,7 +1,95 @@
+@font-face {
+  font-family: vhs;
+  src: url("vhs.ttf");
+}
+
 body {
   background-color: black;
 }
 
+p {
+  margin: 0;
+}
+
 #viewport {
-  
+  width: 600px;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  border-radius: 3px;
+  margin: auto;
+  background-size: cover;
+}
+
+#portview {
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+
+#field {
+  display: none;
+  margin: auto;
+}
+
+#loader {
+  display: none;
+  width: 600px;
+  height: 500px;
+  color: white;
+  font-family: vhs;
+  background-size: cover;
+  font-size: 30px;
+  background-color: blue;
+}
+
+#lib-list {
+  display: none;
+  top: 0px;
+  left: 0px;
+  height: 500px;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.option {
+  width: 150px;
+  height: 60px;
+  font-family: VHS;
+  color: white;
+  background-color: blue;
+  font-size: 30px;
+  border: 1px solid white;
+}
+
+.option:hover {
+  cursor: default;
+  background-color: white;
+}
+
+.zoom {
+  margin: 0 auto;
+  transition: transform .5s; 
+}
+
+.zoom:hover {
+  cursor: default;
+  transform: scale(1.05);
+}
+
+.vhs {
+  position: relative;
+  background-color: black;
+  width: 350px;
+  height: 40px;
+  border: 1px solid gray;
+}
+
+.vhs-spine {
+  right: 3px;
+  border-radius: 5px;
+  position: absolute;
 }

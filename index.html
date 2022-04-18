@@ -3,13 +3,35 @@
   <head>
     <title>NYNEX 2.0</title>
 
+    <link href="crt.css" rel="stylesheet">
     <link href="nynex.css" rel="stylesheet">
   </head>
   <body>
-    <section id="viewport">
-      
+    <section id="viewport" class="crt">
+      <section id="portview">
+        <iframe src="https://villagewood.codesalvageon.repl.co/" width="502" height="402" frameBorder="0" id="field"></iframe>
+        <section id="lib-list">
+          <p class="option" id="eject-lib">EJECT CASSETTE</p>
+          <br/>
+          <section class="vhs zoom">
+            <img src="venuspool.png" width="300" class="vhs-spine" />
+          </section>
+        </section>
+        <section id="loader">
+          <p>NO CASSETTE</p>
+          <p>PLEASE INSERT A CASSETTE</p>
+          <br/>
+          <p class="option" id="lib">CASSETTE LIBRARY</p>
+          <p class="option" id="cdtv">CD-TV GAMES</p>
+          <p class="option" id="life">LOCAL CHANNEL</p>
+          <p class="option" id="look">LOOK AROUND</p>
+        </section>
+      </section>
     </section>
 
+    <audio src="tape.mp3" id="tape-sound"></audio>
+
+    <script src="jquery.min.js"></script>
     <script src="nynex.js"></script>
   </body>
 </html>
