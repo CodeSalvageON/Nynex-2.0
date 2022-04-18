@@ -3,10 +3,12 @@ let cdtv = document.getElementById("cdtv");
 let life = document.getElementById("life");
 
 let eject_lib = document.getElementById("eject-lib");
+let eject_cdtv = document.getElementById("eject-cdtv");
 
 let loader = document.getElementById("loader");
 let field = document.getElementById("field");
 let lib_list = document.getElementById("lib-list");
+let cdtv_stuff = document.getElementById("cdtv-stuff");
 
 let tape_sound = document.getElementById("tape-sound");
 
@@ -39,6 +41,18 @@ lib.onclick = function () {
 eject_lib.onclick = function () {
   field.style.display = "none";
   lib_list.style.display = "none";
+  
+  loader.style.display = "block";
+}
+
+cdtv.onclick = function () {
+  loader.style.display = "none";
+
+  cdtv_stuff.style.display = "block";
+}
+
+eject_cdtv.onclick = function () {
+  cdtv_stuff.style.display = "none";
   
   loader.style.display = "block";
 }

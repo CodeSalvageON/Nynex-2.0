@@ -55,6 +55,18 @@ p {
   position: absolute;
 }
 
+#cdtv-stuff {
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  display: none;
+  background-size: cover;
+  background-image: url('cdtv.gif');
+}
+
 .option {
   width: 150px;
   height: 60px;
