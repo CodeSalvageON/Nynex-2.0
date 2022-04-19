@@ -67,6 +67,30 @@ p {
   background-image: url('cdtv.gif');
 }
 
+#real {
+  display: none;
+  width: 600px;
+  height: 500px;
+  overflow-y: auto;
+  font-family: vhs;
+  color: white;
+  background-color: blue;
+}
+
+#rainfall {
+  display: none;
+  width: 600px;
+  height: 500px;
+  background-size: cover;
+  background-image: url('rain.gif');
+}
+
+#eject-all {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
 .option {
   width: 150px;
   height: 60px;
@@ -78,6 +102,21 @@ p {
 }
 
 .option:hover {
+  cursor: default;
+  background-color: white;
+}
+
+.next-option {
+  width: 150px;
+  height: 60px;
+  font-family: VHS;
+  color: white;
+  background-color: blue;
+  font-size: 30px;
+  border: 1px solid white;
+}
+
+.next-option:hover {
   cursor: default;
   background-color: white;
 }

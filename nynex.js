@@ -4,13 +4,20 @@ let life = document.getElementById("life");
 
 let eject_lib = document.getElementById("eject-lib");
 let eject_cdtv = document.getElementById("eject-cdtv");
+let eject_life = document.getElementById("eject-life");
+let eject_rain = document.getElementById("eject-rain");
 
 let loader = document.getElementById("loader");
 let field = document.getElementById("field");
 let lib_list = document.getElementById("lib-list");
 let cdtv_stuff = document.getElementById("cdtv-stuff");
+let real = document.getElementById("real");
+let rainfall = document.getElementById("rainfall");
 
 let tape_sound = document.getElementById("tape-sound");
+let forward_sound = document.getElementById("forward-sound");
+
+let next = 0;
 
 function waitForElement(id, callback){
   let pops = setInterval(function () {
@@ -29,6 +36,10 @@ waitForElement("viewport", function () {
 
 $(".option").click(function () {
   tape_sound.cloneNode(true).play();
+});
+
+$(".next-option").click(function () {
+  forward_sound.cloneNode(true).play();
 });
 
 lib.onclick = function () {
@@ -54,6 +65,30 @@ cdtv.onclick = function () {
 eject_cdtv.onclick = function () {
   cdtv_stuff.style.display = "none";
   
+  loader.style.display = "block";
+}
+
+life.onclick = function () {
+  loader.style.display = "none";
+
+  real.style.display = "block";
+}
+
+eject_life.onclick = function () {
+  real.style.display = "none";
+
+  loader.style.display = "block";
+}
+
+look.onclick = function () {
+  rainfall.style.display = "block";
+
+  loader.style.display = "none";
+}
+
+eject_rain.onclick = function () {
+  rainfall.style.display = "none";
+
   loader.style.display = "block";
 }
 
