@@ -13,11 +13,12 @@ let lib_list = document.getElementById("lib-list");
 let cdtv_stuff = document.getElementById("cdtv-stuff");
 let real = document.getElementById("real");
 let rainfall = document.getElementById("rainfall");
+let window1 = document.getElementById("window");
 
 let tape_sound = document.getElementById("tape-sound");
 let forward_sound = document.getElementById("forward-sound");
 
-let next = 0;
+let next = 1;
 
 function waitForElement(id, callback){
   let pops = setInterval(function () {
@@ -40,6 +41,27 @@ $(".option").click(function () {
 
 $(".next-option").click(function () {
   forward_sound.cloneNode(true).play();
+
+  if (next === 1) {
+    next += 1;
+
+    rainfall.style.display = "none";
+    window1.style.display = "block";
+  }
+
+  else if (next === 2) {
+    next += 1;
+
+    window1.style.display = "none";
+    rainfall.style.display = "block";
+  }
+
+  else {
+    next = 1;
+
+    window1.style.display = "block";
+    rainfall.style.display = "none";
+  }
 });
 
 lib.onclick = function () {
@@ -86,11 +108,12 @@ look.onclick = function () {
   loader.style.display = "none";
 }
 
-eject_rain.onclick = function () {
+$(".eject-rain").click(function () {
   rainfall.style.display = "none";
+  window1.style.display = "none";
 
   loader.style.display = "block";
-}
+});
 
 setInterval(function () {
   let farmhouseRand = Math.floor(Math.random() * 10);

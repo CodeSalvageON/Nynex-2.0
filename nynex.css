@@ -85,7 +85,15 @@ p {
   background-image: url('rain.gif');
 }
 
-#eject-all {
+#window {
+  display: none;
+  width: 600px;
+  height: 500px;
+  background-size: cover;
+  background-image: url('road.jpg');
+}
+
+#eject-all, #eject-all1 {
   top: 0px;
   left: 0px;
   position: absolute;
