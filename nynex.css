@@ -99,6 +99,10 @@ p {
   position: absolute;
 }
 
+.real-title {
+  font-size: 40px;
+}
+
 .option {
   width: 150px;
   height: 60px;
