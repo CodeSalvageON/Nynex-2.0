@@ -14,6 +14,7 @@ let cdtv_stuff = document.getElementById("cdtv-stuff");
 let real = document.getElementById("real");
 let rainfall = document.getElementById("rainfall");
 let window1 = document.getElementById("window");
+let skyline = document.getElementById("skyline");
 
 let tape_sound = document.getElementById("tape-sound");
 let forward_sound = document.getElementById("forward-sound");
@@ -53,14 +54,14 @@ $(".next-option").click(function () {
     next += 1;
 
     window1.style.display = "none";
-    rainfall.style.display = "block";
+    skyline.style.display = "block";
   }
 
   else {
     next = 1;
 
-    window1.style.display = "block";
-    rainfall.style.display = "none";
+    skyline.style.display = "none";
+    rainfall.style.display = "block";
   }
 });
 
@@ -111,6 +112,7 @@ look.onclick = function () {
 $(".eject-rain").click(function () {
   rainfall.style.display = "none";
   window1.style.display = "none";
+  skyline.style.display = "none";
 
   loader.style.display = "block";
 });

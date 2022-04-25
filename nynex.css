@@ -93,7 +93,14 @@ p {
   background-image: url('road.jpg');
 }
 
-#eject-all, #eject-all1 {
+#skyline {
+  display: none;
+  width: 600px;
+  height: 500px;
+  background-size: cover;
+}
+
+#eject-all, #eject-all1, #eject-all2 {
   top: 0px;
   left: 0px;
   position: absolute;
