@@ -15,6 +15,7 @@ let real = document.getElementById("real");
 let rainfall = document.getElementById("rainfall");
 let window1 = document.getElementById("window");
 let skyline = document.getElementById("skyline");
+let playground = document.getElementById("playground");
 
 let tape_sound = document.getElementById("tape-sound");
 let forward_sound = document.getElementById("forward-sound");
@@ -57,10 +58,17 @@ $(".next-option").click(function () {
     skyline.style.display = "block";
   }
 
+  else if (next === 3) {
+    next += 1;
+
+    skyline.style.display = "none";
+    playground.style.display = "block";
+  }
+
   else {
     next = 1;
 
-    skyline.style.display = "none";
+    playground.style.display = "none";
     rainfall.style.display = "block";
   }
 });
@@ -113,6 +121,7 @@ $(".eject-rain").click(function () {
   rainfall.style.display = "none";
   window1.style.display = "none";
   skyline.style.display = "none";
+  playground.style.display = "none";
 
   loader.style.display = "block";
 });

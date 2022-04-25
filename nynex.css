@@ -100,7 +100,21 @@ p {
   background-size: cover;
 }
 
-#eject-all, #eject-all1, #eject-all2 {
+#playground {
+  display: none;
+  width: 600px;
+  height: 500px;
+  background-size: cover;
+  background-image: url('playground.jpeg');
+}
+
+#tel1, #tel2 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+#eject-all, #eject-all1, #eject-all2, #eject-all3 {
   top: 0px;
   left: 0px;
   position: absolute;
